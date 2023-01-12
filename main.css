@@ -8,6 +8,10 @@ body {
     color: #141414;
     text-transform: capitalize;
     word-wrap: break-word;
+
+}
+body::-webkit-scrollbar{
+    display: none;
 }
 
 .grid-container {
@@ -46,6 +50,10 @@ body {
     border: none;
     border-radius: 8px;
     font-size: 20px;
+    transition: all 200ms ease-in-out;
+}
+.head-container div button i{
+    font-size: 16px;
 }
 
 .blog-grid-container {
@@ -112,15 +120,23 @@ body {
     color: #444343;
 }
 
-
+.blog-content-container, .blog-list-item{ 
+    border: 2px solid transparent;
+    border-radius: 8px;
+}
 /* hover effect */
 .blog-content-container:hover,
 .blog-list-item:hover {
     cursor: pointer;
     background-color: #EFF4FA;
     border-radius: 8px;
+    border-color: #1A064F;
+    transition: all 200ms ease-in-out;
+    transform: scale(1.01);
 }
-
+.head-container div button:hover{
+    transform: scale(1.1);
+}
 .head-container button:hover {
     background-color: #e8f0fb;
     cursor: pointer;
